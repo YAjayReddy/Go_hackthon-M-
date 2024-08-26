@@ -1,0 +1,136 @@
+.alert {
+    font-family: Arial, sans-serif;
+    background-color: #e6f0fa;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    z-index: 5;
+}
+
+.banner-container {
+    width: 90%;
+    
+    max-width: 800px;
+    background-image: url(../public/images/pop-alert-bg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    padding: -50px;
+    position: relative;
+}
+
+.header-banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+.header-banner h1 {
+    position: absolute;
+    font-weight:bolder;
+    margin-left: 19rem;
+    margin-top: 13rem;
+    font-size: 4rem;
+    width: 50px;
+    color: #fefefe;
+}
+
+.register-btn-banner {
+    position: relative;
+    margin-left: 39rem;
+    background-color: #3b82f6;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    
+}
+
+.register-btn-banner:hover {
+    background-color: #2563eb;
+}
+
+.close-btn {
+    
+    font-size: 1.5rem;
+    color: #333;
+    cursor: pointer;
+    position: absolute;
+    top: 30px;
+    right: 40px;
+}
+
+.content-banner {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5rem;
+    
+}
+
+.item-banner {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+    bottom: 0%;
+    border-radius: 20px;
+    margin: 0 10px ;
+    row-gap: .5px;
+}
+.item-banner img{
+    width: 90%;
+}
+
+
+
+
+.alert {
+    display: none;
+    /* background-color: #f8d7da;
+    color: #721c24;
+    padding: 15px;
+    border-radius: 5px; */
+    text-align: center;
+    position: fixed;
+    top: 20px;
+    left: 20%;
+    transform: translateX(-50%);
+    /* width: 80%;
+    max-width: 400px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); */
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.alert.show {
+    display: block;
+    animation: fadeIn 0.5s ease-in-out forwards ;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(0px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+}
