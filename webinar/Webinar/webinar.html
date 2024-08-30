@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="webinar.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Gohackathon</title>
+</head>
+<body>
+    <div class="header">
+        <img src="Public/images/Gohackathon logo.png" alt="Go Hackathon Logo">
+        <div class="nav">
+            <ul>
+                <li><a href="/Go-Hackathon/Home/hero-section.html"><span style="font-size:xx-large;" ><i class='fa fa-home'></i></span></a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="/Go-Hackathon/Training/weekdays.html">Training  <i class="fas fa-caret-down"></i></a>
+                <div>
+                    <ul class="dropdown">
+                        <li><a href="#"  style="color:#0071D1;">4P Program</a></li>
+                        <li><a href="#"  style="color:#0071D1;">Fullstack development </a></li>
+                        <li><a href="#" style="color:#0071D1;">Ui/UX Designing</a></li>
+                        <li><a href="#" style="color:#0071D1;">Advanced Learnings</a></li>
+                        <li><a href="#" style="color:#0071D1;">Professional Development</a></li>
+                    </ul>
+                </div>
+                </li>
+                <li><a href="#">Services  <i class="fas fa-caret-down"></i> </a>
+                <div>
+                    <ul class="dropdown">
+                        <li><a href="#"  style="color:#0071D1;">Workshops</a></li>
+                        <li><a href="#" style="color:#0071D1;">Webinars</a></li>
+                        <li><a href="#" style="color:#0071D1;">Startup Mentorship Program</a></li>
+                        <li><a href="#" style="color:#0071D1;">Hackathons</a></li>
+                        <li><a href="#" style="color:#0071D1;">Internships</a></li>
+                        <li><a href="#" style="color:#0071D1;">Projects</a></li>
+                        <li><a href="#" style="color:#0071D1;">Placement Support</a></li>
+                        <li><a href="#" style="color:#0071D1;">Research</a></li>
+                    </ul>
+                </div> </li>
+                <li><a href="/Go-Hackathon/Career/career.html">Career</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Login/SignUp</a></li>
+            </ul>
+            </div>
+    </div>
+   
+    <!-- body -->
+     <div class="heading">   < Webinars  </div>
+     <div class="main">
+        <div class="para">
+        <p><span>U</span>nlock the secrets to success in our exclusive webinar series designed to elevate your skills and knowledge</p></div>
+        <div class="main-img"><img src="Public/images/webinr_img.png" alt="image"></div>
+     </div>
+
+     <!-- button -->
+      <div class="button">
+     <div class="toggle-container">
+        <button id="weekdays-btn" class="toggle-btn active" ><a href="weekdays.html">Weekdays</a></button>
+        <button id="weekend-btn" class="toggle-btn"><a href="weekend.html">Weekend</a></button>
+    </div>
+</div>
+
+    
+
+   
+     <!-- cards -->
+      <div class="cards">
+        <div class="card-containers">
+           <img src="Public/images/career guidance.avif" alt="image">
+            <h3>Career Guidance Webinar</h3>
+            <p>Slot: <span>10:00AM to 11:00AM</span> <br>Slot: <span>10:00AM to 11:00AM</span></p>
+            <h4>•Live</h4>
+            <button><a href="webinar career.html">Register</a> </button>      
+          </div>
+        <div class="card-containers">
+           <img src="Public/images/emergingtech.png" alt="image">
+           <h3>Emerging Technology</h3>
+           <p>Date: <span>22-08-2024 </span><br>Slot: <span>10:00AM to 11:00AM</span> <br>Slot: <span>10:00AM to 11:00AM</span></p>
+           <button><a href="webinartech.html">Register</a> </button>      
+        </div>
+        <div class="card-containers">
+             <img src="Public/images/ai.png" alt="image">
+            <h3>Mastering in AI</h3>
+            <p>Date: <span>22-08-2024 </span><br>Slot: <span>10:00AM to 11:00AM</span> <br>Slot: <span>10:00AM to 11:00AM</span></p>
+            <button><a href="webinar ai.html">Register</a> </button>      
+        </div>
+      </div>
+
+<!-- footer and faqs -->
+<h2 class="register-btn" style="background-color: #0071D1; width: 100px; border-radius: 50px;">FAQs</h2>
+<div class="faq-container">
+    <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(0)">
+            What topic will be covered in the webinar?
+            <i class="fas fa-chevron-down"></i>
+        </div>
+        <div class="faq-answer">
+            <p>Check out our agenda for a detailed overview of the topics we will be covering during the webinar.</p>
+        </div>
+    </div>
+    <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(1)">
+            Is there a cost to attend the webinar?
+            <i class="fas fa-chevron-down"></i>
+        </div>
+        <div class="faq-answer">
+            <p>Our webinar is free to attend! Simply sign up and join us for an insightful session.</p>
+        </div>
+    </div>
+    <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(2)">
+            How do I access the webinar on the day of event?
+            <i class="fas fa-chevron-down"></i>
+        </div>
+        
+        <div class="faq-answer">
+            <p>Accessing it is easy! Simply follow the provided instructions to join us on the day of the event.</p>
+        </div>
+    </div>
+    <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(3)">
+            Will the webinar be recorded for later viewing?
+                                <i class="fas fa-chevron-down"></i>
+        </div>
+        <div class="faq-answer">
+            <p>The Webinar will be recorded and the recording will be available for viewing later at your convenience.</p>
+        </div>
+    </div>
+</div>
+<footer>
+    <div class="footer-container">
+        <div class="footer-column">
+            <img src="Public/images/Gohackathon logo.png" alt="" class="footer-logo">
+            <p class="address"> info@vidar.in
+                B-47, Sector-63, Noida, UP, 201301</p>
+        </div>
+        <div class="footer-column">
+            <h3>Company</h3>
+            <ul>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3>Services</h3>
+            <ul>
+                <li><a href="#">Building Tech Professionals</a></li>
+                <li><a href="#">Startup Tech Assistance</a></li>
+                <li><a href="#">Hackathon Development</a></li>
+                <li><a href="#">Web Development</a></li>
+                <li><a href="#">Research & Development</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3>Contact</h3>
+            <ul>
+                <li><i class='bx bxs-phone'> +91 7042630789</i></li>
+                <li><i class='bx bx-envelope'> info@gohackathon.in</i></li>
+                <li><i class='bx bx-envelope'> hr@gohackathon.in</i></li>
+               
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3>Follow Us</h3>
+            <ul class="social-icons">
+                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+<script src="webinar.js"></script>
+</body>
+</html>
