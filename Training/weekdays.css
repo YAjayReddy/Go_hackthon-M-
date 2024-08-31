@@ -161,9 +161,10 @@ width: 12vw;
     justify-content: space-between;
     margin: 1rem 0;
     color: white;
-    padding:2vw;
+    padding: 20px;
     text-align: left;
 }
+
 .nav {
     background-color: #0071D1;
     border-radius: 7em;
@@ -194,11 +195,11 @@ width: 12vw;
 }
 .nav ul li ul.dropdown{
     width: 18.5em;
-    border:1.8px solid #000000;
+    /*border:1.8px solid #000000;*/
     box-shadow:0 5px 10px rgba(0,0,0,0.3);    
     background-color:white;
     border-radius: 10px;
-    position:absolute;
+    position: absolute;
     z-index: 999;
     display: none;
     text-align:start;
@@ -212,6 +213,36 @@ width: 12vw;
 .nav ul li:hover ul.dropdown{ 
     display:block;
 }
+.dropdown-1 ul.sub-dropdown li{
+    display: block;
+    margin: 20px 10px;
+    margin-top: 1em;
+}
+.dropdown-1 ul.sub-dropdown{
+    width: 18.5em;
+    border:1.8px solid #000000;
+    box-shadow:0 5px 10px rgba(0,0,0,0.3);    
+    background-color:white;
+    border-radius: 10px;
+    position: absolute;
+    z-index: 999;
+    left:200px;
+    display: none;
+    text-align: left;
+   
+}
+.dropdown-1 a:hover{
+    color: #262f3d;
+    border-radius: 4em;
+    font-weight:600;
+}
+.dropdown-1:hover ul.sub-dropdown{
+    display:block;
+}
+
+
+
+
 
 footer {
     position: relative;
